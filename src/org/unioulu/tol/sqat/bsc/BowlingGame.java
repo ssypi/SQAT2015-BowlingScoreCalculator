@@ -31,7 +31,7 @@ public class BowlingGame {
 			Frame current = frames.get(i);
 			if (current.isStrike()) {
 				int nextIndex = i+1;
-				if (frames.size() >= nextIndex) {
+				if (frames.size() > nextIndex) {
 					Frame nextFrame = frames.get(nextIndex);
 					current.setStrikeExtra(nextFrame.score() + nextFrame.getStrikeExtra());
 				}
@@ -62,7 +62,7 @@ public class BowlingGame {
 		for (int i=0; i < frames.size(); i++) {
 			Frame frame = frames.get(i);
 			if (frame.isSpare()) {
-				if (frames.size() >= i+1) {
+				if (frames.size() > i+1) {
 					Frame nextFrame = frames.get(i+1);
 					score += nextFrame.getFirstThrow();
 				}
