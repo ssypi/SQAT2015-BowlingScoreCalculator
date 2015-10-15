@@ -32,3 +32,5 @@
 1444900331303 test-first 3 255 true
 1444900414372 test-addition 1 61 true
 1444900430022 regression 1 0 true
+1444900487606 test-addition 1 25 true
+1444900487607 test-addition 1 25 true

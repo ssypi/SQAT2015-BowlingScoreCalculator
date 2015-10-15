@@ -127,3 +127,7 @@ UnitTestCaseAction 1444900430021 TestBowlingScoreCalculator.java OK
 UnitTestSessionAction 1444900430022 TestBowlingScoreCalculator OK
 RefactoringAction 1444900461728 TestBowlingScoreCalculator.java ADD void frame_should_not_be_strike_if_only_second_throw_10() METHOD
 EditAction 1444900483912 TestBowlingScoreCalculator.java 2047 9 29 8
+UnitTestCaseAction 1444900487605 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444900487606 TestBowlingScoreCalculator OK
+RefactoringAction 1444900495579 TestBowlingScoreCalculator.java RENAME frame_should_not_be_strike_if_only_second_throw_10()=>void frame_should_not_be_strike_if_second_throw_10() METHOD
+EditAction 1444900497672 TestBowlingScoreCalculator.java 2042 9 29 8
