@@ -17,7 +17,16 @@ public class TestBowlingScoreCalculator {
 	@Before
 	public void setupGame() {
 		game = new BowlingGame();
-		
+		game.addFrame(new Frame(2,4));
+		game.addFrame(new Frame(1,1));
+		game.addFrame(new Frame(3,3));
+		game.addFrame(new Frame(2,2));
+		game.addFrame(new Frame(4,4));
+		game.addFrame(new Frame(5,5));
+		game.addFrame(new Frame(10,8));
+		game.addFrame(new Frame(0,1));
+		game.addFrame(new Frame(0,0));
+		game.addFrame(new Frame(10,10));		
 	}
 	
 	@Test
