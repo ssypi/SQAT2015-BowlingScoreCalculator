@@ -60,5 +60,11 @@ public class TestBowlingScoreCalculator {
 		assertTrue(sum != 0);
 		assertEquals(sum, game.score());
 	}
+	
+	@Test
+	public void frame_should_be_strike_if_first_throw_10() {
+		Frame frame = new Frame(10, 0);
+		assertTrue(frame.isStrike());
+	}
 
 }

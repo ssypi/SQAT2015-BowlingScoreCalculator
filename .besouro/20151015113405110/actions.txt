@@ -93,3 +93,9 @@ EditAction 1444899852484 TestBowlingScoreCalculator.java 1479 5 22 5
 UnitTestCaseAction 1444899858033 TestBowlingScoreCalculator.java OK
 UnitTestSessionAction 1444899858034 TestBowlingScoreCalculator OK
 EditAction 1444899874524 TestBowlingScoreCalculator.java 1504 5 23 6
+UnitTestCaseAction 1444899878166 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444899878167 TestBowlingScoreCalculator OK
+RefactoringAction 1444899950642 TestBowlingScoreCalculator.java ADD void frame_should_be_strike_if_ FIELD
+RefactoringAction 1444899955164 TestBowlingScoreCalculator.java RENAME frame_should_be_strike_if_=>void frame_should_be_strike_if_first_throw_10 FIELD
+RefactoringAction 1444899956185 TestBowlingScoreCalculator.java RENAME frame_should_be_strike_if_first_throw_10=>void frame_should_be_strike_if_first_throw_10() METHOD
+EditAction 1444899971966 TestBowlingScoreCalculator.java 1646 6 25 7
