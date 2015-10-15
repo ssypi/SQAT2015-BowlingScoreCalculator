@@ -57,6 +57,7 @@ public class TestBowlingScoreCalculator {
 		for (Frame frame : game.getFrames()) {
 			sum += frame.score();
 		}
+		assertTrue(sum != 0);
 		assertEquals(sum, game.score());
 	}
 
