@@ -1,0 +1,12 @@
+FileOpenedAction 1444898045450 TestBowlingScoreCalculator.java 223 1 1 0
+RefactoringAction 1444898313957 TestBowlingScoreCalculator.java REMOVE test() METHOD
+FileOpenedAction 1444898325967 BowlingGame.java 584 5 2 0
+FileOpenedAction 1444898335360 Frame.java 794 6 7 0
+RefactoringAction 1444898392422 Frame.java ADD int getFirstThrow() METHOD
+RefactoringAction 1444898398023 TestBowlingScoreCalculator.java ADD void should_ FIELD
+RefactoringAction 1444898402537 TestBowlingScoreCalculator.java REMOVE should_ FIELD
+RefactoringAction 1444898406551 TestBowlingScoreCalculator.java ADD void frame_should_have_two_throws FIELD
+RefactoringAction 1444898444955 TestBowlingScoreCalculator.java ADD import org.unioulu.tol.sqat.bsc.Frame IMPORT
+RefactoringAction 1444898514440 TestBowlingScoreCalculator.java REMOVE import org.unioulu.tol.sqat.bsc.Frame IMPORT
+RefactoringAction 1444898561517 TestBowlingScoreCalculator.java ADD import org.unioulu.tol.sqat.bsc.Frame IMPORT
+EditAction 1444898600662 Frame.java 827 7 7 0
