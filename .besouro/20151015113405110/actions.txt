@@ -131,3 +131,18 @@ UnitTestCaseAction 1444900487605 TestBowlingScoreCalculator.java OK
 UnitTestSessionAction 1444900487606 TestBowlingScoreCalculator OK
 RefactoringAction 1444900495579 TestBowlingScoreCalculator.java RENAME frame_should_not_be_strike_if_only_second_throw_10()=>void frame_should_not_be_strike_if_second_throw_10() METHOD
 EditAction 1444900497672 TestBowlingScoreCalculator.java 2042 9 29 8
+UnitTestCaseAction 1444900503883 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444900503883 TestBowlingScoreCalculator OK
+RefactoringAction 1444900620742 TestBowlingScoreCalculator.java ADD void strike_should_not_have_second_thro FIELD
+RefactoringAction 1444900629766 TestBowlingScoreCalculator.java REMOVE strike_should_not_have_second_thro FIELD
+RefactoringAction 1444900670790 TestBowlingScoreCalculator.java ADD void strike_score_should_ FIELD
+RefactoringAction 1444900672816 TestBowlingScoreCalculator.java RENAME strike_score_should_=>void strike_score_should_be_ FIELD
+RefactoringAction 1444900678839 TestBowlingScoreCalculator.java RENAME strike_score_should_be_=>void strike_score_should_be_10_plus_ FIELD
+RefactoringAction 1444900688546 TestBowlingScoreCalculator.java RENAME strike_score_should_be_10_plus_=>void strike_score_should_be_10_plus_next_frame() METHOD
+RefactoringAction 1444900777155 Frame.java ADD Frame()/2 METHOD
+RefactoringAction 1444900787685 Frame.java REMOVE Frame()/2 METHOD
+RefactoringAction 1444900899102 TestBowlingScoreCalculator.java RENAME strike_score_should_be_10_plus_next_frame()=>void strike_should_() METHOD
+RefactoringAction 1444900901126 TestBowlingScoreCalculator.java RENAME strike_should_()=>void strike_should_not_() METHOD
+RefactoringAction 1444900915651 TestBowlingScoreCalculator.java RENAME strike_should_not_()=>void strike_should_not_have_second() METHOD
+RefactoringAction 1444900922176 TestBowlingScoreCalculator.java RENAME strike_should_not_have_second()=>void strike_should_not_have_second_throw() METHOD
+EditAction 1444900958519 Frame.java 1383 12 13 0
