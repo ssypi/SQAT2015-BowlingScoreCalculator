@@ -39,5 +39,12 @@ public class Frame {
 		return 0;
 	}
 	
-	public int getFirstThrow() 
+	public int getFirstThrow() {
+		return firstThrow;
+	}
+
+
+	public int getSecondThrow() {
+		return secondThrow;
+	}
 }
