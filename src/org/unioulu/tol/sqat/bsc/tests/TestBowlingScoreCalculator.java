@@ -125,4 +125,20 @@ public class TestBowlingScoreCalculator {
 		assertEquals(expectedScore, game.score());		
 		
 	}
+	
+	@Test
+	public void strike_score_should_not_be_affected_by_next_spare() {
+		BowlingGame game = new BowlingGame();
+		game.addFrame(new Frame(10, 0));
+		game.addFrame(new Frame(7, 3));
+		game.addFrame(new Frame(2, 5));
+		
+		int strikeScore = 10 + (7+3);
+		int spareScore = 10 + 2;
+		int thirdFrame = 2 + 5;
+		int expectedScore = strikeScore + spareScore + thirdFrame;
+		
+		assertEquals(expectedScore, game.score());
+		
+	}
 }
