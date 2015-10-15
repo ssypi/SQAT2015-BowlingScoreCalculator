@@ -5,6 +5,7 @@ public class Frame {
 	
 	private int firstThrow;
 	private int secondThrow;
+	private int bonusThrow;
 	
 	private int strikeExtraScore = 0;
 	
@@ -78,8 +79,11 @@ public class Frame {
 
 	//bonus throws
 	public int bonus(){
-		//to be implemented
-		return 0;
+		return bonusThrow;
+	}
+	
+	public void setBonusThrow(int score) {
+		this.bonusThrow = score;
 	}
 	
 	public int getFirstThrow() {

@@ -156,4 +156,35 @@ public class TestBowlingScoreCalculator {
 		assertEquals(expectedTotal, game.score());
 		
 	}
+	
+	@Test
+	public void spare_score_should_not_be_affected_by_next_spare() {
+		BowlingGame game = new BowlingGame();
+		game.addFrame(new Frame(5,5));
+		game.addFrame(new Frame(4,6));
+		game.addFrame(new Frame(2,1));
+		
+		int third = 2+1;
+		int second = 10 + 2;
+		int first = 10 + 4;
+		
+		int totalExpected = first+second+third;
+		
+		assertEquals(totalExpected, game.score());
+		
+	}
+	
+	@Test
+	public void spare_as_last_should_have_bonus_throw() {
+		BowlingGame game = new BowlingGame();
+		game.addFrame(new Frame(4, 4));
+		
+		Frame last = new Frame(6, 4);
+		last.setBonusThrow(2);
+		game.addFrame(last);
+		
+		int expectedScore = (4+4) + 10 + 2;
+		assertEquals(expectedScore, game.score());
+		
+	}
 }
