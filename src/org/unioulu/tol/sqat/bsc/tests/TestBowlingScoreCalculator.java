@@ -110,6 +110,8 @@ public class TestBowlingScoreCalculator {
 	public void frame_should_be_spare_when_all_pins_down_in_two_throws() {
 		Frame frame = new Frame(4, 6);
 		assertTrue(frame.isSpare());
+		Frame frame = new Frame(4, 5);
+		assertFalse(frame.isSpare());
 	}
 	
 }
