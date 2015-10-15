@@ -1,6 +1,8 @@
 package org.unioulu.tol.sqat.bsc;
 
 public class Frame {
+	private static final int MAX_SCORE = 10;
+	
 	private int firstThrow;
 	private int secondThrow;
 	
@@ -28,6 +30,11 @@ public class Frame {
 		}		
 		if (isStrike() && secondThrow > 0) {
 			throw new IllegalArgumentException("Strike should only have one throw");
+		}
+		if (firstThrow + secondThrow > MAX_SCORE) {
+			throw new IllegalArgumentException(
+					String.format("Total sum of throws must be between 0 and 10 (was %s and %s)",
+							firstThrow, secondThrow));		
 		}
 	}
 	
