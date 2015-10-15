@@ -50,3 +50,5 @@ RefactoringAction 1444899002347 Frame.java RENAME set=>void setFirstThrow() METH
 RefactoringAction 1444899005362 Frame.java RENAME setFirstThrow()=>void setFirstThrow(int) METHOD
 RefactoringAction 1444899019391 Frame.java ADD void setSecondThrow(int) METHOD
 EditAction 1444899053073 BowlingGame.java 715 6 4 0
+CompilationAction 1444899056618 BowlingGame.java
+EditAction 1444899056695 Frame.java 1101 11 11 0
