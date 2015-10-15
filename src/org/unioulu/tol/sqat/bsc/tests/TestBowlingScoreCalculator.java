@@ -187,4 +187,20 @@ public class TestBowlingScoreCalculator {
 		assertEquals(expectedScore, game.score());
 		
 	}
+	
+	@Test
+	public void strike_last_last_should_give_two_bonus_throws() {
+		BowlingGame game = new BowlingGame();
+		game.addFrame(new Frame(5,3));
+		Frame last = new Frame(10, 0);
+		last.setBonusThrow(3);
+		last.setSecondBonus(5);
+		game.addFrame(last);
+		int expectedScore = (5+3) + 10 + 3 + 5;
+		
+		assertEquals(expectedScore, game.score());
+		
+		
+		
+	}
 }
