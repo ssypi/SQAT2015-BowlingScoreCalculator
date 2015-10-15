@@ -53,7 +53,7 @@ public class Frame {
 	
 	//the score of a single frame
 	public int score(){
-		if (isLastFrame()) {
+		if (isLastFrame() && isSpare()) {
 			return firstThrow + secondThrow + bonusThrow;
 		}
 		return firstThrow + secondThrow;

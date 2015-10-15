@@ -276,3 +276,9 @@ RefactoringAction 1444904398803 Frame.java ADD void setIsLastFrame(boolean) METH
 RefactoringAction 1444904410330 Frame.java ADD boolean isLastFrame FIELD
 EditAction 1444904450071 BowlingGame.java 1847 7 11 0
 EditAction 1444904453564 Frame.java 2292 15 20 0
+UnitTestCaseAction 1444904461132 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444904461133 TestBowlingScoreCalculator OK
+RefactoringAction 1444904614678 TestBowlingScoreCalculator.java ADD void strike_last_last_s FIELD
+RefactoringAction 1444904624206 TestBowlingScoreCalculator.java RENAME strike_last_last_s=>void strike_last_last_should_give_two_ FIELD
+RefactoringAction 1444904627728 TestBowlingScoreCalculator.java RENAME strike_last_last_should_give_two_=>void strike_last_last_should_give_two_bonus_throws() METHOD
+EditAction 1444904784793 Frame.java 2305 15 20 0
