@@ -40,8 +40,13 @@ public class TestBowlingScoreCalculator {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void frame_should_throw_for_invalid_scores() {
-		Frame frame = new Frame(11, 0);
+	public void throw_should_not_be_over_10() {
+		new Frame(11, 0);
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void throw_should_not_be_under_0() {
+		new Frame(0, -1);
 	}
 	
 	@Test
@@ -69,6 +74,12 @@ public class TestBowlingScoreCalculator {
 	public void frame_should_be_strike_if_first_throw_10() {
 		Frame frame = new Frame(10, 0);
 		assertTrue(frame.isStrike());
+	}
+	
+	@Test
+	public void frame_should_not_be_strike_if_only_second_throw_10() {
+		Frame frame = new Frame(9, 10);
+		assertFalse(frame.isStrike());
 	}
 
 }

@@ -115,3 +115,15 @@ EditAction 1444900296197 Frame.java 1381 12 13 0
 UnitTestCaseAction 1444900302208 TestBowlingScoreCalculator.java FAIL
 UnitTestSessionAction 1444900302209 TestBowlingScoreCalculator FAIL
 EditAction 1444900324952 Frame.java 1383 12 13 0
+UnitTestCaseAction 1444900331300 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444900331301 TestBowlingScoreCalculator OK
+RefactoringAction 1444900353138 TestBowlingScoreCalculator.java RENAME frame_should_throw_for_invalid_scores()=>void frame_should_throw_for_throws_() METHOD
+RefactoringAction 1444900355662 TestBowlingScoreCalculator.java RENAME frame_should_throw_for_throws_()=>void frame_should_throw_for_invalid_scores() METHOD
+RefactoringAction 1444900375687 TestBowlingScoreCalculator.java RENAME frame_should_throw_for_invalid_scores()=>void throw_should_not_be_over_10() METHOD
+RefactoringAction 1444900396233 TestBowlingScoreCalculator.java ADD void throw_should_not_be_under_0() METHOD
+UnitTestCaseAction 1444900414371 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444900414372 TestBowlingScoreCalculator OK
+UnitTestCaseAction 1444900430021 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444900430022 TestBowlingScoreCalculator OK
+RefactoringAction 1444900461728 TestBowlingScoreCalculator.java ADD void frame_should_not_be_strike_if_only_second_throw_10() METHOD
+EditAction 1444900483912 TestBowlingScoreCalculator.java 2047 9 29 8
