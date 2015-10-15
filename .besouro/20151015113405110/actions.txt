@@ -112,3 +112,6 @@ UnitTestSessionAction 1444900191788 TestBowlingScoreCalculator FAIL
 RefactoringAction 1444900215615 Frame.java ADD boolean isValid() METHOD
 RefactoringAction 1444900258302 Frame.java RENAME isValid()=>boolean isValid(int) METHOD
 EditAction 1444900296197 Frame.java 1381 12 13 0
+UnitTestCaseAction 1444900302208 TestBowlingScoreCalculator.java FAIL
+UnitTestSessionAction 1444900302209 TestBowlingScoreCalculator FAIL
+EditAction 1444900324952 Frame.java 1383 12 13 0

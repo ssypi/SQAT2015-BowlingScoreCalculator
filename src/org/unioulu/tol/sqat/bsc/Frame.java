@@ -18,7 +18,7 @@ public class Frame {
 	}
 	
 	private boolean isValid(int throwScore) {
-		return (throwScore < 0 || throwScore > 10);
+		return (throwScore >= 0 && throwScore <= 10);
 	}
 	
 	//the score of a single frame
