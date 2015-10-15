@@ -55,6 +55,11 @@ public class TestBowlingScoreCalculator {
 		assertEquals(6, frame.score());
 	}
 	
+	@Test(expected = IllegalArgumentException.class)
+	public void frame_score_should_not_exceed_10_should_throw() {
+		new Frame(2, 9);
+	}
+	
 	@Test
 	public void game_should_consist_of_10_frames() {
 		assertEquals(10, game.getFrames().size());		

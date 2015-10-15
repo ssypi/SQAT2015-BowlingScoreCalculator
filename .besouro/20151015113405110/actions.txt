@@ -176,3 +176,8 @@ RefactoringAction 1444901835586 Frame.java REMOVE setSecondThrow(int) METHOD
 RefactoringAction 1444901835587 Frame.java REMOVE setFirstThrow(int) METHOD
 EditAction 1444901842451 Frame.java 1513 11 13 0
 EditAction 1444901845865 TestBowlingScoreCalculator.java 2545 11 37 9
+UnitTestCaseAction 1444901849441 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444901849442 TestBowlingScoreCalculator OK
+RefactoringAction 1444901918480 TestBowlingScoreCalculator.java ADD void frame_score_should_not_exceed_10() METHOD
+RefactoringAction 1444901938596 TestBowlingScoreCalculator.java RENAME frame_score_should_not_exceed_10()=>void frame_score_should_not_exceed_10_should_throw() METHOD
+EditAction 1444901949069 TestBowlingScoreCalculator.java 2687 12 38 9
