@@ -23,10 +23,10 @@ public class TestBowlingScoreCalculator {
 		game.addFrame(new Frame(2,2));
 		game.addFrame(new Frame(4,4));
 		game.addFrame(new Frame(5,5));
-		game.addFrame(new Frame(9,8));
+		game.addFrame(new Frame(9,1));
 		game.addFrame(new Frame(0,1));
 		game.addFrame(new Frame(0,0));
-		game.addFrame(new Frame(8,10));		
+		game.addFrame(new Frame(8,2));		
 	}
 	
 	@Test
