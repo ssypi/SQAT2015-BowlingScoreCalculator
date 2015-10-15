@@ -13,8 +13,13 @@ public class Frame {
 		this.secondThrow = secondThrow;
 		
 		if (!isValid(firstThrow) || !isValid(secondThrow)) {
-			throw new IllegalArgumentException("Throws must be between 0 and 10");	
+			throw new IllegalArgumentException(
+					String.format("Throws must be between 0 and 10 (was %s and %s)",
+							firstThrow, secondThrow));	
 		}		
+		if (isStrike() && secondThrow > 0) {
+			throw new IllegalArgumentException("Strike should only have one throw");
+		}
 	}
 	
 	private boolean isValid(int throwScore) {
