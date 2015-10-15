@@ -73,3 +73,4 @@ RefactoringAction 1444899319840 BowlingGame.java ADD BowlingGame(List<Frame>) ME
 RefactoringAction 1444899378897 TestBowlingScoreCalculator.java ADD import java.util.ArrayList IMPORT
 RefactoringAction 1444899385119 TestBowlingScoreCalculator.java ADD import java.util.List IMPORT
 EditAction 1444899448188 BowlingGame.java 793 7 5 0
+EditAction 1444899453225 TestBowlingScoreCalculator.java 1298 5 15 5
