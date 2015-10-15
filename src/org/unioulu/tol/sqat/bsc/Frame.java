@@ -9,8 +9,17 @@ public class Frame {
 	}
 	
 	public Frame(int firstThrow, int secondThrow){
-		this.firstThrow = firstThrow;
-		this.secondThrow = secondThrow;
+		setThrows(firstThrow, secondThrow);
+	}
+	
+	private boolean isValid(int throwScore) {
+		return (throwScore >= 0 && throwScore <= 10);
+	}
+	
+	
+	public void setThrows(int first, int second) {
+		this.firstThrow = first;
+		this.secondThrow = second;
 		
 		if (!isValid(firstThrow) || !isValid(secondThrow)) {
 			throw new IllegalArgumentException(
@@ -22,9 +31,6 @@ public class Frame {
 		}
 	}
 	
-	private boolean isValid(int throwScore) {
-		return (throwScore >= 0 && throwScore <= 10);
-	}
 	
 	//the score of a single frame
 	public int score(){

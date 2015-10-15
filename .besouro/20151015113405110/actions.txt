@@ -158,3 +158,9 @@ UnitTestSessionAction 1444901164480 TestBowlingScoreCalculator OK
 RefactoringAction 1444901201186 TestBowlingScoreCalculator.java ADD void strike_score_should_be_10_ FIELD
 RefactoringAction 1444901208209 TestBowlingScoreCalculator.java RENAME strike_score_should_be_10_=>void strike_score_should_be_10_plus_next_frame() METHOD
 EditAction 1444901485826 TestBowlingScoreCalculator.java 2502 11 37 9
+CompilationAction 1444901491742 TestBowlingScoreCalculator.java
+UnitTestCaseAction 1444901494406 TestBowlingScoreCalculator.java FAIL
+UnitTestSessionAction 1444901494406 TestBowlingScoreCalculator FAIL
+RefactoringAction 1444901506732 Frame.java ADD void setThrows() METHOD
+RefactoringAction 1444901510249 Frame.java RENAME setThrows()=>void setThrows(int, int) METHOD
+EditAction 1444901556509 Frame.java 1667 13 15 0
