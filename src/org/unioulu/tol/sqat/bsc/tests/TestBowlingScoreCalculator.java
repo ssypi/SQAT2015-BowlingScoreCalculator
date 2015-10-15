@@ -36,8 +36,12 @@ public class TestBowlingScoreCalculator {
 		Frame frame = new Frame(first, second);
 		
 		assertEquals(first, frame.getFirstThrow());
-		assertEquals(second, frame.getSecondThrow());	
+		assertEquals(second, frame.getSecondThrow());		
+	}
 	
+	@Test(expected = IllegalArgumentException.class)
+	public void frame_should_throw_for_invalid_scores() {
+		Frame frame = new Frame(11, 0);
 	}
 	
 	@Test

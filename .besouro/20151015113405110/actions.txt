@@ -102,3 +102,8 @@ EditAction 1444899971966 TestBowlingScoreCalculator.java 1646 6 25 7
 UnitTestCaseAction 1444899977674 TestBowlingScoreCalculator.java FAIL
 UnitTestSessionAction 1444899977675 TestBowlingScoreCalculator FAIL
 EditAction 1444900011217 Frame.java 1140 11 11 0
+UnitTestCaseAction 1444900015156 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444900015157 TestBowlingScoreCalculator OK
+RefactoringAction 1444900075588 TestBowlingScoreCalculator.java ADD void should_throw_for_invalid_scores() METHOD
+RefactoringAction 1444900077610 TestBowlingScoreCalculator.java RENAME should_throw_for_invalid_scores()=>void frame_should_throw_for_invalid_scores() METHOD
+EditAction 1444900187937 TestBowlingScoreCalculator.java 1793 7 26 7
