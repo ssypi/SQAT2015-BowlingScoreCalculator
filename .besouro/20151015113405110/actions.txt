@@ -146,3 +146,4 @@ RefactoringAction 1444900901126 TestBowlingScoreCalculator.java RENAME strike_sh
 RefactoringAction 1444900915651 TestBowlingScoreCalculator.java RENAME strike_should_not_()=>void strike_should_not_have_second() METHOD
 RefactoringAction 1444900922176 TestBowlingScoreCalculator.java RENAME strike_should_not_have_second()=>void strike_should_not_have_second_throw() METHOD
 EditAction 1444900958519 Frame.java 1383 12 13 0
+EditAction 1444900962174 TestBowlingScoreCalculator.java 2175 10 30 8

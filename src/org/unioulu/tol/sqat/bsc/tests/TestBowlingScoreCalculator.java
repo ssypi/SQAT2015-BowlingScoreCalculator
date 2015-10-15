@@ -81,5 +81,9 @@ public class TestBowlingScoreCalculator {
 		Frame frame = new Frame(9, 10);
 		assertFalse(frame.isStrike());
 	}
-
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void strike_should_not_have_second_throw() {
+		new Frame(10, 1);		
+	}
 }
