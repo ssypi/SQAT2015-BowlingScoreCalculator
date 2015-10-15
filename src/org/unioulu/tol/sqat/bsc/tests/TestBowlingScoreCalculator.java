@@ -138,7 +138,22 @@ public class TestBowlingScoreCalculator {
 		int thirdFrame = 2 + 5;
 		int expectedScore = strikeScore + spareScore + thirdFrame;
 		
-		assertEquals(expectedScore, game.score());
+		assertEquals(expectedScore, game.score());		
+	}
+	
+	@Test
+	public void strike_score_is_affected_by_next_strike() {
+		BowlingGame game = new BowlingGame();
+		game.addFrame(new Frame(10, 0));
+		game.addFrame(new Frame(10, 0));
+		game.addFrame(new Frame(3,4));
+		
+		int thirdFrame = 3 + 4;
+		int secondFrameStrike = 10 + thirdFrame;
+		int firstFrameStrike = 10 + secondFrameStrike;
+		int expectedTotal = firstFrameStrike + secondFrameStrike + thirdFrame;
+		
+		assertEquals(expectedTotal, game.score());
 		
 	}
 }
