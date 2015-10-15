@@ -11,6 +11,14 @@ public class Frame {
 	public Frame(int firstThrow, int secondThrow){
 		this.firstThrow = firstThrow;
 		this.secondThrow = secondThrow;
+		
+		if (!isValid(firstThrow) || !isValid(secondThrow)) {
+			throw new IllegalArgumentException("Throws must be between 0 and 10");	
+		}		
+	}
+	
+	private boolean isValid(int throwScore) {
+		return (throwScore < 0 || throwScore > 10);
 	}
 	
 	//the score of a single frame
