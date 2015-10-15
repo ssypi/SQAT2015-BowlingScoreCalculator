@@ -27,4 +27,8 @@ public class BowlingGame {
 		//to be implemented
 		return false;
 	}
+	
+	public List<Frame> getFrames() {
+		return frames;
+	}
 }

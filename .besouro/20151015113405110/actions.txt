@@ -37,3 +37,8 @@ RefactoringAction 1444898801228 TestBowlingScoreCalculator.java RENAME game_shou
 RefactoringAction 1444898804244 TestBowlingScoreCalculator.java RENAME game_should_consist_of_10_frames=>void game_should_consist_of_10_frames() METHOD
 RefactoringAction 1444898832634 TestBowlingScoreCalculator.java ADD import org.unioulu.tol.sqat.bsc.BowlingGame IMPORT
 EditAction 1444898896944 TestBowlingScoreCalculator.java 786 3 9 4
+CompilationAction 1444898899751 TestBowlingScoreCalculator.java
+UnitTestCaseAction 1444898901610 TestBowlingScoreCalculator.java FAIL
+UnitTestSessionAction 1444898901611 TestBowlingScoreCalculator FAIL
+RefactoringAction 1444898911915 BowlingGame.java ADD void getFrames() METHOD
+EditAction 1444898936409 BowlingGame.java 644 6 3 0
