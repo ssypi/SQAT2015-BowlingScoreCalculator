@@ -7,6 +7,8 @@ public class Frame {
 	private int secondThrow;
 	private int bonusThrow;
 	
+	private boolean isLastFrame;
+	
 	private int strikeExtraScore = 0;
 	
 	public Frame() {
@@ -51,6 +53,9 @@ public class Frame {
 	
 	//the score of a single frame
 	public int score(){
+		if (isLastFrame()) {
+			return firstThrow + secondThrow + bonusThrow;
+		}
 		return firstThrow + secondThrow;
 	}
 
@@ -70,11 +75,14 @@ public class Frame {
 		}
 		return firstThrow + secondThrow == 10;
 	}
+	
+	public void setIsLastFrame(boolean isLastFrame) {
+		this.isLastFrame = isLastFrame;
+	}
 
 	//return whether this is the last frame of the match
 	public boolean isLastFrame(){
-		//to be implemented
-		return false;
+		return isLastFrame;
 	}
 
 	//bonus throws
