@@ -86,4 +86,16 @@ public class TestBowlingScoreCalculator {
 	public void strike_should_not_have_second_throw() {
 		new Frame(10, 1);		
 	}
+	
+	@Test
+	public void strike_score_should_be_10_plus_next_frame() {
+		List<Frame> frames = game.getFrames();
+		frames.get(0).setThrows(0, 0);
+		frames.get(1).setThrows(5, 4);
+		int score = game.score();
+		frames.get(0).setThrows(10, 0);
+		int scoreAfter = game.score();
+		
+		assertEquals(score + 9, scoreAfter);		
+	}
 }
