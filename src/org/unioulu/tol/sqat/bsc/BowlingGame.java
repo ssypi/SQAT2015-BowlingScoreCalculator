@@ -27,7 +27,7 @@ public class BowlingGame {
 	public int score(){
 		int score = 0;
 		
-		for (int i = frames.size(); i > 0; i--) {
+		for (int i = frames.size() - 1; i > 0; i--) {
 			Frame current = frames.get(i);
 			if (current.isStrike()) {
 				int nextIndex = i+1;
