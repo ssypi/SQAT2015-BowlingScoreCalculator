@@ -22,11 +22,11 @@ public class TestBowlingScoreCalculator {
 		game.addFrame(new Frame(3,3));
 		game.addFrame(new Frame(2,2));
 		game.addFrame(new Frame(4,4));
-		game.addFrame(new Frame(5,5));
-		game.addFrame(new Frame(9,1));
+		game.addFrame(new Frame(5,2));
+		game.addFrame(new Frame(8,1));
 		game.addFrame(new Frame(0,1));
 		game.addFrame(new Frame(0,0));
-		game.addFrame(new Frame(8,2));		
+		game.addFrame(new Frame(7,2));		
 	}
 	
 	@Test
@@ -108,10 +108,21 @@ public class TestBowlingScoreCalculator {
 	
 	@Test
 	public void frame_should_be_spare_when_all_pins_down_in_two_throws() {
-		Frame frame = new Frame(4, 6);
-		assertTrue(frame.isSpare());
-		Frame frame = new Frame(4, 5);
-		assertFalse(frame.isSpare());
+		Frame spareFrame = new Frame(4, 6);
+		assertTrue(spareFrame.isSpare());
+		Frame nonSpareFrame = new Frame(4, 5);
+		assertFalse(nonSpareFrame.isSpare());
 	}
 	
+	@Test
+	public void spare_score_should_be_10_plus_next_throw() {
+		BowlingGame game = new BowlingGame();
+		game.addFrame(new Frame(4,6));
+		game.addFrame(new Frame(4, 2));
+		
+		int expectedScore = (10 + 4) + (4 + 2);
+
+		assertEquals(expectedScore, game.score());		
+		
+	}
 }
