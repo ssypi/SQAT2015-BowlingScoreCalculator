@@ -48,7 +48,6 @@ public class TestBowlingScoreCalculator {
 	
 	@Test
 	public void game_should_consist_of_10_frames() {
-		BowlingGame game = new BowlingGame();
 		assertEquals(10, game.getFrames().size());		
 	}
 	
