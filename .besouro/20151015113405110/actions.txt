@@ -170,3 +170,8 @@ EditAction 1444901610347 TestBowlingScoreCalculator.java 2539 11 37 9
 UnitTestCaseAction 1444901613922 TestBowlingScoreCalculator.java FAIL
 UnitTestSessionAction 1444901613923 TestBowlingScoreCalculator FAIL
 EditAction 1444901780520 BowlingGame.java 1070 7 8 0
+UnitTestCaseAction 1444901784288 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444901784289 TestBowlingScoreCalculator OK
+RefactoringAction 1444901835586 Frame.java REMOVE setSecondThrow(int) METHOD
+RefactoringAction 1444901835587 Frame.java REMOVE setFirstThrow(int) METHOD
+EditAction 1444901842451 Frame.java 1513 11 13 0

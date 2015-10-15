@@ -64,14 +64,6 @@ public class Frame {
 		return 0;
 	}
 	
-	public void setFirstThrow(int score) {
-		this.firstThrow = score;
-	}
-	
-	public void setSecondThrow(int score) {
-		this.secondThrow = score;
-	}
-	
 	public int getFirstThrow() {
 		return firstThrow;
 	}
