@@ -8,10 +8,15 @@ public class BowlingGame {
 	private List<Frame> frames = new ArrayList<Frame>();
 	private Frame bonus;
 	
+	
 	public BowlingGame(){
 		for (int i = 0; i < 10; i++) {
 			frames.add(new Frame());
 		}
+	}
+	
+	public BowlingGame(List<Frame> frames) {
+		this.frames = frames;
 	}
 	
 	public void addFrame(Frame frame){

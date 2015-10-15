@@ -55,3 +55,21 @@ EditAction 1444899056695 Frame.java 1101 11 11 0
 UnitTestCaseAction 1444899061507 TestBowlingScoreCalculator.java FAIL
 UnitTestSessionAction 1444899061507 TestBowlingScoreCalculator FAIL
 EditAction 1444899069680 BowlingGame.java 715 6 4 0
+UnitTestCaseAction 1444899072650 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444899072650 TestBowlingScoreCalculator OK
+RefactoringAction 1444899105095 TestBowlingScoreCalculator.java ADD void game FIELD
+RefactoringAction 1444899109612 TestBowlingScoreCalculator.java RENAME game=>void game_score_should_ FIELD
+RefactoringAction 1444899113629 TestBowlingScoreCalculator.java RENAME game_score_should_=>void game_score_should_equal_to_sum_of_ FIELD
+RefactoringAction 1444899115150 TestBowlingScoreCalculator.java RENAME game_score_should_equal_to_sum_of_=>void game_score_should_equal_to_sum_of_frames FIELD
+RefactoringAction 1444899117668 TestBowlingScoreCalculator.java RENAME game_score_should_equal_to_sum_of_frames=>void game_score_should_equal_to_sum_of_frames() METHOD
+RefactoringAction 1444899120684 TestBowlingScoreCalculator.java RENAME game_score_should_equal_to_sum_of_frames()=>void game_score_should_equal_to_sum_of_frame_scores() METHOD
+RefactoringAction 1444899139241 TestBowlingScoreCalculator.java ADD BowlingGame game FIELD
+RefactoringAction 1444899148318 TestBowlingScoreCalculator.java ADD void setup() METHOD
+RefactoringAction 1444899150836 TestBowlingScoreCalculator.java RENAME setup()=>void setupGame() METHOD
+RefactoringAction 1444899184481 TestBowlingScoreCalculator.java ADD import org.junit.Before IMPORT
+RefactoringAction 1444899294213 BowlingGame.java ADD void setFrames() METHOD
+RefactoringAction 1444899299261 BowlingGame.java REMOVE setFrames() METHOD
+RefactoringAction 1444899319840 BowlingGame.java ADD BowlingGame(List<Frame>) METHOD
+RefactoringAction 1444899378897 TestBowlingScoreCalculator.java ADD import java.util.ArrayList IMPORT
+RefactoringAction 1444899385119 TestBowlingScoreCalculator.java ADD import java.util.List IMPORT
+EditAction 1444899448188 BowlingGame.java 793 7 5 0
