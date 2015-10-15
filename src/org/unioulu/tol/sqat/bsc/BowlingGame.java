@@ -26,8 +26,20 @@ public class BowlingGame {
 	
 	public int score(){
 		int score = 0;
+		// calculate normal scores
 		for (Frame frame : frames) {
 			score += frame.score();
+		}
+		
+		// add strikes
+		for (int i=0; i < frames.size(); i++) {
+			Frame frame = frames.get(i);
+			if (frame.isStrike()) {
+				if (frames.size() >= i+1) {
+					Frame nextFrame = frames.get(i+1);
+					score += nextFrame.score();
+				}
+			}
 		}
 		return score;
 	}
