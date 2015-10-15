@@ -244,3 +244,4 @@ RefactoringAction 1444903244804 BowlingGame.java REMOVE isNextFrameBonus() METHO
 RefactoringAction 1444903246821 BowlingGame.java ADD boolean isNextFrameBonus() METHOD
 RefactoringAction 1444903246822 BowlingGame.java ADD List<Frame> getFrames() METHOD
 EditAction 1444903293368 BowlingGame.java 1711 7 9 0
+EditAction 1444903300358 Frame.java 2014 13 17 0

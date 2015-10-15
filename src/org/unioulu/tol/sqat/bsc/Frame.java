@@ -6,6 +6,8 @@ public class Frame {
 	private int firstThrow;
 	private int secondThrow;
 	
+	private int strikeExtraScore = 0;
+	
 	public Frame() {
 		
 	}
@@ -38,6 +40,13 @@ public class Frame {
 		}
 	}
 	
+	public int getStrikeExtra() {
+		return strikeExtraScore;
+	}
+	
+	public void setStrikeExtra(int extraScore) {
+		this.strikeExtraScore = extraScore;
+	}
 	
 	//the score of a single frame
 	public int score(){
