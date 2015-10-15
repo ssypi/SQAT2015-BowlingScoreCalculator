@@ -175,3 +175,4 @@ UnitTestSessionAction 1444901784289 TestBowlingScoreCalculator OK
 RefactoringAction 1444901835586 Frame.java REMOVE setSecondThrow(int) METHOD
 RefactoringAction 1444901835587 Frame.java REMOVE setFirstThrow(int) METHOD
 EditAction 1444901842451 Frame.java 1513 11 13 0
+EditAction 1444901845865 TestBowlingScoreCalculator.java 2545 11 37 9

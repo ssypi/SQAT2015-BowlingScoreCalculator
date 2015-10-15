@@ -100,4 +100,6 @@ public class TestBowlingScoreCalculator {
 		
 		assertEquals(expectedStrikeScore, game.score());		
 	}
+	
+	
 }
