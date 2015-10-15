@@ -9,7 +9,7 @@ public class BowlingGame {
 	private Frame bonus;
 	
 	public BowlingGame(){
-		for (int i = 1; i < 10; i++) {
+		for (int i = 0; i < 10; i++) {
 			frames.add(new Frame());
 		}
 	}
