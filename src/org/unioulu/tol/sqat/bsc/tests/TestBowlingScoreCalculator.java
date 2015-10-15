@@ -91,11 +91,13 @@ public class TestBowlingScoreCalculator {
 	public void strike_score_should_be_10_plus_next_frame() {
 		List<Frame> frames = game.getFrames();
 		frames.get(0).setThrows(0, 0);
-		frames.get(1).setThrows(5, 4);
+		frames.get(1).setThrows(5, 4);		
 		int score = game.score();
-		frames.get(0).setThrows(10, 0);
-		int scoreAfter = game.score();
 		
-		assertEquals(score + 9, scoreAfter);		
+		frames.get(0).setThrows(10, 0);
+		
+		int expectedStrikeScore = score + 10 + 5 + 4;
+		
+		assertEquals(expectedStrikeScore, game.score());		
 	}
 }
