@@ -26,12 +26,27 @@ public class BowlingGame {
 	
 	public int score(){
 		int score = 0;
+		
+		for (int i = frames.size(); i > 0; i--) {
+			Frame current = frames.get(i);
+			if (current.isStrike()) {
+				int nextIndex = i+1;
+				if (frames.size() >= nextIndex) {
+					Frame nextFrame = frames.get(nextIndex);
+					current.setStrikeExtra(nextFrame.score() + nextFrame.getStrikeExtra());
+				}
+			}
+		}
+		
+		
 		// calculate normal scores
 		for (Frame frame : frames) {
 			score += frame.score();
+			score += frame.getStrikeExtra();
 		}
 		
 		// add strikes
+		/*
 		for (int i=0; i < frames.size(); i++) {
 			Frame frame = frames.get(i);
 			if (frame.isStrike()) {
@@ -41,6 +56,7 @@ public class BowlingGame {
 				}
 			}
 		}
+		*/
 		
 		// add spares
 		for (int i=0; i < frames.size(); i++) {

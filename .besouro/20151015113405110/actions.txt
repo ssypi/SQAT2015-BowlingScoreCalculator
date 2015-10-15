@@ -232,3 +232,15 @@ RefactoringAction 1444902881673 TestBowlingScoreCalculator.java RENAME strike_=>
 RefactoringAction 1444902886198 TestBowlingScoreCalculator.java RENAME strike_score_is_affected_by_=>void strike_score_is_affected_by_next_strike FIELD
 RefactoringAction 1444902888722 TestBowlingScoreCalculator.java RENAME strike_score_is_affected_by_next_strike=>void strike_score_is_affected_by_next_strike() METHOD
 EditAction 1444902975740 TestBowlingScoreCalculator.java 4121 16 65 14
+UnitTestCaseAction 1444902979635 TestBowlingScoreCalculator.java FAIL
+UnitTestSessionAction 1444902979636 TestBowlingScoreCalculator FAIL
+RefactoringAction 1444903173114 Frame.java ADD int strikeExtra FIELD
+RefactoringAction 1444903175629 Frame.java RENAME strikeExtra=>int strikeExtraScore FIELD
+RefactoringAction 1444903187158 Frame.java ADD int g FIELD
+RefactoringAction 1444903194674 Frame.java RENAME g=>int getStrikeExtra() METHOD
+RefactoringAction 1444903206691 Frame.java ADD void setStrikeExtra(int) METHOD
+RefactoringAction 1444903244803 BowlingGame.java REMOVE getFrames() METHOD
+RefactoringAction 1444903244804 BowlingGame.java REMOVE isNextFrameBonus() METHOD
+RefactoringAction 1444903246821 BowlingGame.java ADD boolean isNextFrameBonus() METHOD
+RefactoringAction 1444903246822 BowlingGame.java ADD List<Frame> getFrames() METHOD
+EditAction 1444903293368 BowlingGame.java 1711 7 9 0
