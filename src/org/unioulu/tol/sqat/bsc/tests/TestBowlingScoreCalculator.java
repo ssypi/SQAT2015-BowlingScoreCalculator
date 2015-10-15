@@ -53,14 +53,10 @@ public class TestBowlingScoreCalculator {
 	
 	@Test
 	public void game_score_should_equal_to_sum_of_frame_scores() {
-		List<Frame> frames = new ArrayList<>();
 		int sum = 0;
-		for (int i=0; i < 10; i++) {
-			sum += i;
-			sum += i+1;
-			frames.add(new Frame(i, i+1));
+		for (Frame frame : game.getFrames()) {
+			sum += frame.score();
 		}
-		BowlingGame game = new BowlingGame(frames);
 		assertEquals(sum, game.score());
 	}
 
