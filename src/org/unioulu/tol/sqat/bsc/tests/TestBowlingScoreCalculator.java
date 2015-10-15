@@ -83,7 +83,7 @@ public class TestBowlingScoreCalculator {
 	
 	@Test
 	public void frame_should_not_be_strike_if_second_throw_10() {
-		Frame frame = new Frame(9, 10);
+		Frame frame = new Frame(0, 10);
 		assertFalse(frame.isStrike());
 	}
 	
