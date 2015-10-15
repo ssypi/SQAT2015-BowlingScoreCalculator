@@ -270,3 +270,8 @@ EditAction 1444904282601 Frame.java 2102 14 18 0
 UnitTestCaseAction 1444904286356 TestBowlingScoreCalculator.java FAIL
 UnitTestSessionAction 1444904286356 TestBowlingScoreCalculator FAIL
 EditAction 1444904316785 BowlingGame.java 1714 7 9 0
+UnitTestCaseAction 1444904320515 TestBowlingScoreCalculator.java FAIL
+UnitTestSessionAction 1444904320516 TestBowlingScoreCalculator FAIL
+RefactoringAction 1444904398803 Frame.java ADD void setIsLastFrame(boolean) METHOD
+RefactoringAction 1444904410330 Frame.java ADD boolean isLastFrame FIELD
+EditAction 1444904450071 BowlingGame.java 1847 7 11 0
