@@ -10,3 +10,4 @@ RefactoringAction 1444898444955 TestBowlingScoreCalculator.java ADD import org.u
 RefactoringAction 1444898514440 TestBowlingScoreCalculator.java REMOVE import org.unioulu.tol.sqat.bsc.Frame IMPORT
 RefactoringAction 1444898561517 TestBowlingScoreCalculator.java ADD import org.unioulu.tol.sqat.bsc.Frame IMPORT
 EditAction 1444898600662 Frame.java 827 7 7 0
+EditAction 1444898603898 TestBowlingScoreCalculator.java 442 1 5 2
