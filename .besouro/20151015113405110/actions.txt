@@ -291,3 +291,25 @@ RefactoringAction 1444904868375 Frame.java ADD void setSecondBonus(int) METHOD
 RefactoringAction 1444904879430 Frame.java ADD void getSecondBonus() METHOD
 RefactoringAction 1444904889975 Frame.java ADD int bonusThrowSecond FIELD
 EditAction 1444904927930 Frame.java 2608 17 23 0
+UnitTestCaseAction 1444904935990 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444904935991 TestBowlingScoreCalculator OK
+RefactoringAction 1444904980229 TestBowlingScoreCalculator.java ADD void spare FIELD
+RefactoringAction 1444904984257 TestBowlingScoreCalculator.java RENAME spare=>void bonus_ FIELD
+RefactoringAction 1444904987282 TestBowlingScoreCalculator.java RENAME bonus_=>void bonus_throw_should_n FIELD
+RefactoringAction 1444904989310 TestBowlingScoreCalculator.java RENAME bonus_throw_should_n=>void bonus_throw_s FIELD
+RefactoringAction 1444904997336 TestBowlingScoreCalculator.java RENAME bonus_throw_s=>void bonus_throw_as_strike_should_not_give_extra_throws() METHOD
+UnitTestCaseAction 1444905085128 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444905085129 TestBowlingScoreCalculator OK
+RefactoringAction 1444905114629 TestBowlingScoreCalculator.java ADD void perfect FIELD
+RefactoringAction 1444905116157 TestBowlingScoreCalculator.java RENAME perfect=>void perfect_score_ FIELD
+RefactoringAction 1444905122184 TestBowlingScoreCalculator.java RENAME perfect_score_=>void perfect_game_should_give_300_points() METHOD
+UnitTestCaseAction 1444905145291 TestBowlingScoreCalculator.java FAIL
+UnitTestSessionAction 1444905145292 TestBowlingScoreCalculator FAIL
+RefactoringAction 1444905162499 TestBowlingScoreCalculator.java ADD void test FIELD
+RefactoringAction 1444905166025 TestBowlingScoreCalculator.java RENAME test=>void testRealGame() METHOD
+CompilationAction 1444905267430 TestBowlingScoreCalculator.java
+UnitTestCaseAction 1444905282857 TestBowlingScoreCalculator.java FAIL
+UnitTestSessionAction 1444905282858 TestBowlingScoreCalculator FAIL
+RefactoringAction 1444905286811 TestBowlingScoreCalculator.java REMOVE perfect_game_should_give_300_points() METHOD
+UnitTestCaseAction 1444905289862 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444905289863 TestBowlingScoreCalculator OK

@@ -198,9 +198,36 @@ public class TestBowlingScoreCalculator {
 		game.addFrame(last);
 		int expectedScore = (5+3) + 10 + 3 + 5;
 		
+		assertEquals(expectedScore, game.score());	
+	}
+	
+	@Test
+	public void bonus_throw_as_strike_should_not_give_extra_throws() {
+		BowlingGame game = new BowlingGame();
+		game.addFrame(new Frame(5,4));
+		Frame last = new Frame(3, 7);
+		last.setBonusThrow(10);
+		last.setSecondBonus(10); // this should not be calculated by score()
+		game.addFrame(last);
+		int expectedScore = (5 + 4) + 10 + 10;
 		assertEquals(expectedScore, game.score());
+	}
 		
+	public void testRealGame() {
+		BowlingGame game = new BowlingGame();
+		game.addFrame(new Frame(6,3));
+		game.addFrame(new Frame(7,1));
+		game.addFrame(new Frame(8,2));
+		game.addFrame(new Frame(7,2));
+		game.addFrame(new Frame(10,0));
+		game.addFrame(new Frame(6,2));
+		game.addFrame(new Frame(7,3));
+		game.addFrame(new Frame(10,0));
+		game.addFrame(new Frame(8,0));
+		Frame last = new Frame(7,3);
+		last.setBonusThrow(10);
+		game.addFrame(last);
 		
-		
+		assertEquals(135, game.score());
 	}
 }
