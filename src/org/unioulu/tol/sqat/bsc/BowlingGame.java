@@ -41,6 +41,18 @@ public class BowlingGame {
 				}
 			}
 		}
+		
+		// add spares
+		for (int i=0; i < frames.size(); i++) {
+			Frame frame = frames.get(i);
+			if (frame.isSpare()) {
+				if (frames.size() >= i+1) {
+					Frame nextFrame = frames.get(i+1);
+					score += nextFrame.getFirstThrow();
+				}
+			}
+		}
+		
 		return score;
 	}
 	
