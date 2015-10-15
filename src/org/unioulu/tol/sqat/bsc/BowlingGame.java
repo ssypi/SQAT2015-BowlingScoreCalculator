@@ -10,9 +10,6 @@ public class BowlingGame {
 	
 	
 	public BowlingGame(){
-		for (int i = 0; i < 10; i++) {
-			frames.add(new Frame());
-		}
 	}
 	
 	public BowlingGame(List<Frame> frames) {
